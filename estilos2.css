@@ -35,6 +35,13 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
+    padding: 10px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    position: relative;
+    width: 100%;
+    z-index: 80;
 }
 
 .navbar-light .navbar-toggler {
@@ -55,6 +62,7 @@ ul.dropdown-menu.show {
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.664);
+    padding-right: 85px;
 }
 
 .fondo {
@@ -75,7 +83,7 @@ ul.dropdown-menu.show {
     width: 80%;
     padding: 1%;
     text-align: center;
-    margin: 6% 10%;
+    margin: 9% 10%;
 }
 
 h1 {
@@ -89,6 +97,30 @@ section {
 
 section.aboutus {
     margin: 50px 0;
+}
+
+.allcards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #231f20;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+    margin: 3% 0%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.card:hover {
+    transform: translate(0, -50px) scale(1.1);
 }
 
 a {
@@ -118,6 +150,8 @@ ul li ul li:hover {
     display: block;
     cursor: pointer;
     text-transform: none;
+    height: 30px;
+    width: 100%;
 }
 
 a.plan:hover>ul li {
@@ -210,7 +244,8 @@ div.typeplan {
 h3 {
     text-align: center;
     font-size: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 
 h4 {
@@ -231,7 +266,8 @@ i.fas.fa-tasks {
 
 p.parrafo {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 30px 10px;
+    font-size: 24px;
 }
 
 .grid2 {
@@ -288,7 +324,7 @@ button.btn.btn-warning {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 0% 25%;
+    margin: 0% 12%;
     padding: 2%;
     border: solid 1px #eec50c;
     border-radius: 50px;
@@ -304,4 +340,38 @@ button.btn.btn-warning {
     font-size: 300%;
     border-bottom: solid 1px yellow;
     padding-bottom: 10px;
+}
+
+@media (max-width: 906px) {
+    .form-control {
+        width: 332px;
+    }
+}
+
+@media (max-width: 774px) {
+    .form-control {
+        width: 186px;
+    }
+    .form-ingresar {
+        margin: 0% 6%;
+    }
+}
+
+@media (max-width: 614px) {
+    .form-control {
+        width: 150px;
+    }
+    .form-ingresar {
+        margin: 0% 2%;
+    }
+}
+
+@media (max-width: 380px) {
+    .form-control {
+        width: 150px;
+    }
+    .form-ingresar {
+        margin: 0% 1%;
+        padding: 4%
+    }
 }

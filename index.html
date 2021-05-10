@@ -15,50 +15,46 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="logopng.png" alt="digipay" height="47px" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav m-xxl-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#title1">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#title2">¿Cómo funciona?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Planes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                            <li><a class="dropdown-item" href="title3">¿Cómo funcionan nuestros planes?</a></li>
+                            <li><a class="dropdown-item" href="Planes.html">Tipos de planes</a></li>
+                        </ul>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#title4">Contáctanos</a>
+                        </li>
+
+                    </li>
+
+                    <button type="button" class="btn btn-warning"><a class="nav-link" href="Ingresar.html">
+                            Ingresar </a></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <header class="fondo">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Digipay</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav m-xxl-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Acerca de Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">¿Cómo funciona?</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Planes
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-                                <li><a class="dropdown-item" href="Planes.html">Tipos de planes</a></li>
-                                <li><a class="dropdown-item" href="#">Adquiere un plan</a></li>
-                            </ul>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contáctanos</a>
-                            </li>
-
-                        </li>
-
-                        <button type="button" class="btn btn-warning"><a class="nav-link" href="Ingresar.html">
-                                Ingresar
-
-                            </a></button>
-
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
         <div class="titulo">
             <h1>Bienvenido a nuestra página web</h1>
             <h2>Esta página web es para que puedas gestionar tu restaurante con nosotros.</h2>
@@ -66,50 +62,63 @@
     </header>
 
 
+
+
+
     <main>
-
         <section class="aboutus">
-
-            <h3>ACERCA DE NOSOTROS</h3>
-
-
-
-            <div class=stylegrid>
-
-                <div class="grid2">
-                    <div class="text">
-                        <i class="fas fa-tasks"></i>
-                        <p class="au1">
-                            Te brindamos servicio de gestión tanto con tu personal y con tu contabilidad.
+            <h3 id="title1">ACERCA DE NOSOTROS</h3>
+            <div class="allcards">
+                <div class="card" style="width: 18rem;">
+                    <img src="management.png" class="card-img-top" alt="management">
+                    <div class="card-body">
+                        <h5 class="card-title">SERVICIOS</h5>
+                        <p class="card-text">Te brindamos servicio de gestión tanto con tu personal y con tu contabilidad
                         </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
                     </div>
+                </div>
 
-                    <div class="text">
-                        <i class="fas fa-mobile-alt"></i>
-                        <p class="au1">
-                            Nuestro servicio incluye una app donde el cliente puede realizar sus pedidos y pagar en forma digital
-                        </p>
+                <div class="card" style="width: 18rem;">
+                    <img src="app.png" class="card-img-top" alt="app">
+                    <div class="card-body">
+                        <h5 class="card-title">APLICACIÓN</h5>
+                        <p class="card-text">Nuestro servicio incluye una app donde el cliente puede realizar sus pedidos y pagar en forma digital</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
                     </div>
+                </div>
 
-                    <div class="text">
-                        <i class="fas fa-check-double"></i>
-                        <p class="au1">Contamos con planes tanto como para pequeños y grandes restaurantes
-                        </p>
+                <div class="card" style="width: 18rem;">
+                    <img src="Cocina.png" class="card-img-top" alt="restaurante">
+                    <div class="card-body">
+                        <h5 class="card-title">PARA TODOS</h5>
+                        <p class="card-text">Contamos con planes tanto como para pequeños y grandes restaurantes</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
+
         </section>
 
 
 
         <hr />
-        <section class="title">
 
-            <h3>PLANES</h3>
+        <section>
+            <h3 id="title2">¿CÓMO FUNCIONA?</h3>
+
+            <p class=parrafo>
+                Debes llenar el formulario en la sección “Contáctanos, indicando tus datos y los de tu restaurante además de indicar el tipo de plan en el que estás interesado. <br /> Luego de esto te contactaremos para ver si este plan se acomoda a tus
+                necesidades. Ya acordado y seleccionado el plan, seguiremos con la firma del contrato.
+            </p>
+        </section>
+        <hr />
+
+        <section class="title">
+            <h3 id="title3">PLANES</h3>
             <div class="typeplan">
 
                 <div class="type1">
-
                     <h4>PLAN BÁSICO</h4>
                     <p class="planes">Menos de 10 trabajadores</p>
                 </div>
@@ -125,32 +134,18 @@
                     <p class="planes">Entre 26 y 50 trabajadores</p>
                 </div>
 
-
-
                 <div class="type1">
                     <h4>PLAN BLACK</h4>
                     <p class="planes">Más de 50 trabajadores</p>
                 </div>
-
-
             </div>
-
-
         </section>
+
+
 
         <section>
             <hr />
-            <h3>¿CÓMO FUNCIONA?</h3>
-
-            <p class=parrafo>
-                Debes llenar el formulario en la sección “Contáctanos, indicando tus datos y los de tu restaurante además de indicar el tipo de plan en el que estás interesado. <br /> Luego de esto te contactaremos para ver si este plan se acomoda a tus
-                necesidades. Ya acordado y seleccionado el plan, seguiremos con la firma del contrato.
-            </p>
-        </section>
-
-        <section>
-            <hr />
-            <h3>CONTÁCTANOS </h3>
+            <h3 id="title4">CONTÁCTANOS </h3>
             <div class=formulario>
 
                 <div class="fullform">
