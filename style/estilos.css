@@ -247,6 +247,7 @@ table {
 
 div.typeplan {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 50px;
     padding: 4%;
@@ -264,6 +265,12 @@ div.typeplan {
     padding: 0px 23px;
     background-color: #f1f1f1;
     color: #212529;
+    margin: 5% 0%;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
 }
 
 .btn.btn-primary {
@@ -313,7 +320,7 @@ i.fas.fa-tasks {
 }
 
 #title4 {
-    margin: 20% 0;
+    margin: 10% 0;
 }
 
 .grid2 {
