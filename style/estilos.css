@@ -20,9 +20,19 @@ body {
     color: white;
 }
 
+#send1 {
+    display: block;
+    ;
+}
+
+.btn.btn-primary {
+    display: block;
+    margin-top: 4%;
+}
+
 .dropdown-item {
     width: 120%;
-    padding: 3px 10px;
+    padding: 3px;
     clear: both;
     font-weight: 400;
     color: #212529;
@@ -35,7 +45,6 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
-    padding: 10px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -66,24 +75,30 @@ ul.dropdown-menu.show {
 }
 
 .fondo {
-    background-image: url(bannerweb.jpg);
-    height: 400px;
+    background-image: url(../images/bannerweb.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    padding: 7%;
+}
+
+.card-text {
+    text-align: center;
 }
 
 .titulo {
     background-color: rgb(0, 0, 0);
     background-color: rgba(26, 26, 26, 0.4);
     border: 3px solid #f1f1f1;
-    position: absolute;
     z-index: 2;
     width: 80%;
     padding: 1%;
     text-align: center;
-    margin: 9% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 h1 {
@@ -102,6 +117,7 @@ section.aboutus {
 .allcards {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -173,9 +189,8 @@ nav ul.menu {
 
 nav .submenu {
     position: absolute;
-    width: 164px;
-    margin-top: 10px;
     background-color: black;
+    margin: 0;
     z-index: 3;
     opacity: 0;
     transition-property: opacity;
@@ -186,11 +201,13 @@ nav .submenu:hover {
     opacity: 1;
 }
 
+.btn.btn-warning {
+    margin: 0;
+    padding: 0;
+}
+
 nav ul li ul li {
     text-align: left;
-    width: 164px;
-    margin-top: 10px;
-    padding: 4px 0;
     display: block;
 }
 
@@ -229,16 +246,32 @@ table {
 }
 
 div.typeplan {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
+    padding: 4%;
+    justify-content: space-around;
+}
+
+.btn-prim.btn-primary {
+    border-radius: #eec50c solid 1px;
 }
 
 .type1 {
-    border: yellow solid 1px;
+    position: relative;
+    border: white solid 1px;
     border-radius: 10px;
     padding: 0px 23px;
+    background-color: #f1f1f1;
+    color: #212529;
+}
+
+.btn.btn-primary {
+    background-color: #eec50c;
+}
+
+.listoptions {
+    display: block;
 }
 
 h3 {
@@ -264,10 +297,23 @@ i.fas.fa-tasks {
     font-size: 320%;
 }
 
-p.parrafo {
+.parrafo {
     text-align: center;
     margin: 30px 10px;
     font-size: 24px;
+    background-color: #e7ce12;
+    margin: 0 8%;
+    font-family: satisfy;
+    color: #212529;
+    border-radius: 10px;
+}
+
+#title3 {
+    margin: 10% 0;
+}
+
+#title4 {
+    margin: 20% 0;
 }
 
 .grid2 {
@@ -283,27 +329,55 @@ p.parrafo {
 }
 
 .formulario {
-    display: grid;
-    height: 291px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: -30px;
-    margin-bottom: 50px;
-    grid-gap: 20px;
+}
+
+.plandetail {
+    font-family: satisfy;
+    font-size: 150%;
+}
+
+.descriptionplan {
+    list-style: none;
+    padding-bottom: 2%;
+}
+
+#plandesc1 {
+    width: 15%;
+    height: 15%;
+    border-bottom: 2px solid grey;
+}
+
+.dropdownlist {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.desctype {
+    list-style: none;
+}
+
+.fullform {
+    margin: 0.5%;
+    width: 40%;
 }
 
 .lineform {
-    width: 572px;
+    width: 100%;
     display: block;
 }
 
+.mainfooter {
+    border-top: 1px solid yellow;
+    margin-top: 10%;
+}
+
 button.btn.btn-warning {
-    margin-right: 17px;
     font-family: Oswald;
     text-transform: uppercase;
-    padding: 0px 6px;
 }
 
 .nav-link {
@@ -324,7 +398,7 @@ button.btn.btn-warning {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 0% 12%;
+    margin: 17% 12%;
     padding: 2%;
     border: solid 1px #eec50c;
     border-radius: 50px;
